@@ -10,8 +10,8 @@ node* createnode(int data)
      struct node* p;
 	 p=new (struct node);
 	 p->data=data;
-	 p->next=NULL;
-	 return p;
+	 p->next=NULL;                      //time complexity-O(n) n is is length of ll
+	 return p;                               //space complexity-O(1)
 }
 void insert(struct node **head,int num)
 {
