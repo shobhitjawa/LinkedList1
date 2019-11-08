@@ -18,7 +18,6 @@ void insert(struct node** head,int r)
 	p=createnode(r);
 	if(*head==NULL)
 	{
-		
 		*head=p;
 		p->next=NULL;
 	}                                                      //reverse a linked list using recursion.O(n).
