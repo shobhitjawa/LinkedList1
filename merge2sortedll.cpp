@@ -59,13 +59,15 @@ node* sortedmerge(struct node* head,struct node* head1)
 		result=head1;
 		result->next=sortedmerge(head,head1->next);
 	}
-  }  
-
+	return result;
+  } 
+  
 int main()
 {
 	int n,number,number1,d;               
 	struct node *head=NULL;
 	struct node *head1=NULL;
+	struct node* g=NULL;
 	cout<<"enter number of elements in linked list 1.";
 	cin>>n;
 	cout<<"first linked list"<<endl;
@@ -81,7 +83,7 @@ int main()
 		cin>>number1;
 		insert(&head1,number1);
 	}
-	sortedmerge(head,head1);
-	display(head);
+	struct node* result=sortedmerge(head,head1);
+	display(result);
 return 0; 
 }
