@@ -5,7 +5,8 @@ struct node{
 	struct  node* next;
 	int data;
 };
-node* createnode(int data){
+node* createnode(int data){                 //this is wrong code not executing...
+	
   struct node* p;
   p=new (struct node);
   p->data=data;
